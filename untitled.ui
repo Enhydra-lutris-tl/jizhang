@@ -56,7 +56,7 @@ background: rgba(26, 28, 41, 1);
 background: rgba(42, 43, 61, 1);
 }</string>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -244,10 +244,10 @@ background: rgba(42, 43, 61, 1);
     <widget class="QTableWidget" name="tableWidget">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>280</y>
-       <width>1031</width>
-       <height>451</height>
+       <x>100</x>
+       <y>290</y>
+       <width>961</width>
+       <height>441</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -256,10 +256,10 @@ color:rgb(255,255,255);
 font-size:16px</string>
      </property>
      <attribute name="horizontalHeaderCascadingSectionResizes">
-      <bool>false</bool>
+      <bool>true</bool>
      </attribute>
      <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>167</number>
+      <number>157</number>
      </attribute>
      <row>
       <property name="text">
@@ -301,13 +301,13 @@ font-size:16px</string>
      <property name="geometry">
       <rect>
        <x>500</x>
-       <y>130</y>
+       <y>150</y>
        <width>120</width>
        <height>40</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background: rgba(26, 28, 41, 1);
+      <string notr="true">background: rgb(79, 233, 160);
 color:rgb(255, 255, 255);
 border-radius:4px</string>
      </property>
@@ -325,7 +325,7 @@ border-radius:4px</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background: rgba(26, 28, 41, 1);
+      <string notr="true">background: rgb(170, 170, 170);
 color:rgb(255, 255, 255);
 border-radius:4px</string>
      </property>
@@ -333,13 +333,13 @@ border-radius:4px</string>
       <string>清除</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>480</x>
        <y>30</y>
        <width>330</width>
-       <height>42</height>
+       <height>46</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
@@ -393,7 +393,7 @@ border-radius:4px</string>
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>100</x>
@@ -437,13 +437,13 @@ border-radius:4px</string>
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>100</x>
        <y>80</y>
        <width>330</width>
-       <height>42</height>
+       <height>46</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -491,13 +491,13 @@ border-radius:4px</string>
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>480</x>
        <y>80</y>
        <width>330</width>
-       <height>42</height>
+       <height>46</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -520,16 +520,62 @@ font-size:16px</string>
       </item>
       <item>
        <widget class="QComboBox" name="comboBox_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="minimumSize">
          <size>
           <width>240</width>
           <height>40</height>
          </size>
         </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::DefaultContextMenu</enum>
+        </property>
         <property name="styleSheet">
-         <string notr="true">background: rgba(26, 28, 41, 1);
+         <string notr="true">QComboBox{
+padding-left:12px;
+border:1px solid rgb(150, 150, 150);
 color:rgb(255, 255, 255);
-border-radius:4px</string>
+font-family:微软雅黑;
+font-size:18px;
+line-height:14px;
+border-radius:8px;
+background:rgb(26, 28, 41)
+}
+
+QComboBox QAbstractItemView::item{
+height:30px;
+color:#131313;
+font-family:微软雅黑;
+font-size:18px;
+line-height:12px;
+border: 1px solid #FAFAFB;
+} 
+
+QComboBox::down-arrow{
+image:url(:/liveClientStudent/Resources/images/down_normal.png);
+} 
+
+QComboBox::drop-down{
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 33px;
+border-width: 1px;
+padding-left:12px;
+}
+
+QListView::item{
+padding-left:6px;
+}
+
+QListView::item:selected{
+color:#FFFFFF;
+background:rgb(26, 28, 41);
+}</string>
         </property>
         <item>
          <property name="text">
@@ -545,11 +591,11 @@ border-radius:4px</string>
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>100</x>
-       <y>130</y>
+       <y>140</y>
        <width>373</width>
        <height>122</height>
       </rect>
